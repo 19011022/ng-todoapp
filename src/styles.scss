@@ -1,0 +1,54 @@
+/* You can add global styles to this file, and also import other style files */
+html, body { height: 100%; overflow: hidden;}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.completed-todo-text {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.todo-card {
+    display: flex; /* Use Flexbox */
+    justify-content: space-between; /* Adjust this as needed to set the spacing between items */
+    margin-bottom: 1rem;
+  }
+  
+  .horizontal-container {
+    display: flex; /* Use Flexbox */
+    align-items: center; /* Optional: Center items vertically */
+  }
+
+
+
+.fixed-height-todoes-container {
+height: 45%; /* Set your desired fixed height here */
+overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.fixed-height-completed-container {
+  height: 25%; /* Set your desired fixed height here */
+  overflow-y: auto; /* Enable vertical scrolling */
+  }
+
+  .fixed-height-footer-container {
+    height: 15%; /* Set your desired fixed height here */
+    overflow-y: auto; /* Enable vertical scrolling */
+    }
+
+    .fixed-height-header-container {
+      height: 10%; /* Set your desired fixed height here */
+      overflow-y: auto; /* Enable vertical scrolling */
+      }
+  
+
+  .example-card {
+    max-width: 400px;
+  }
+  
+  .example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  }
+
+
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';
